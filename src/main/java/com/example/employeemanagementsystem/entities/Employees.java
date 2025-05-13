@@ -12,8 +12,17 @@ import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 // @Entity Annotation used for creating an entity table for the particular object
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Employees {
     
 	@Id
@@ -30,112 +39,112 @@ public class Employees {
 	private Date createdAt;
 	private Date modifiedAt;
 	
-	
-	public Employees() {}
-
-	public Employees(long id, String name, String phoneNo, String email, String password, String address, String city,
-			String state, String zip, Date createdAt, Date modifiedAt) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.phoneNo = phoneNo;
-		this.email = email;
-		this.password = password;
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-		this.createdAt = createdAt;
-		this.modifiedAt = modifiedAt;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getPhoneNo() {
-		return phoneNo;
-	}
-
-	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getZip() {
-		return zip;
-	}
-
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
-
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	public Date getModifiedAt() {
-		return modifiedAt;
-	}
-
-	public void setModifiedAt(Date modifiedAt) {
-		this.modifiedAt = modifiedAt;
-	}
+//	
+//	public Employees() {}
+//
+//	public Employees(long id, String name, String phoneNo, String email, String password, String address, String city,
+//			String state, String zip, Date createdAt, Date modifiedAt) {
+//		super();
+//		this.id = id;
+//		this.name = name;
+//		this.phoneNo = phoneNo;
+//		this.email = email;
+//		this.password = password;
+//		this.address = address;
+//		this.city = city;
+//		this.state = state;
+//		this.zip = zip;
+//		this.createdAt = createdAt;
+//		this.modifiedAt = modifiedAt;
+//	}
+//
+//	public long getId() {
+//		return id;
+//	}
+//
+//	public void setId(long id) {
+//		this.id = id;
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//	public String getPhoneNo() {
+//		return phoneNo;
+//	}
+//
+//	public void setPhoneNo(String phoneNo) {
+//		this.phoneNo = phoneNo;
+//	}
+//
+//	public String getEmail() {
+//		return email;
+//	}
+//
+//	public void setEmail(String email) {
+//		this.email = email;
+//	}
+//
+//	public String getPassword() {
+//		return password;
+//	}
+//
+//	public void setPassword(String password) {
+//		this.password = password;
+//	}
+//
+//	public String getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(String address) {
+//		this.address = address;
+//	}
+//
+//	public String getCity() {
+//		return city;
+//	}
+//
+//	public void setCity(String city) {
+//		this.city = city;
+//	}
+//
+//	public String getState() {
+//		return state;
+//	}
+//
+//	public void setState(String state) {
+//		this.state = state;
+//	}
+//
+//	public String getZip() {
+//		return zip;
+//	}
+//
+//	public void setZip(String zip) {
+//		this.zip = zip;
+//	}
+//
+//	public Date getCreatedAt() {
+//		return createdAt;
+//	}
+//
+//	public void setCreatedAt(Date createdAt) {
+//		this.createdAt = createdAt;
+//	}
+//
+//	public Date getModifiedAt() {
+//		return modifiedAt;
+//	}
+//
+//	public void setModifiedAt(Date modifiedAt) {
+//		this.modifiedAt = modifiedAt;
+//	}
 
 	@Override
 	public String toString() {
